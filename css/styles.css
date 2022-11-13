@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+
+body {
+  margin: 0 auto;
+  font-family: "Nunito Sans", Arial;
+  font-style: normal;
+  font-weight: 400;
+  max-width: 1440px;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.section2 {
+  background-color: #131313;
+  height: 1074px;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 1440px;
+}
+
+.section2__table {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+  color: #e3b873;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  padding-top: 107px;
+  margin-right: 130px;
+}
+
+.section2__table-text {
+  color: rgba(255, 255, 255, 0.3);
+  margin-right: 60px;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.section2__table-text:hover,
+.section2__table-text.active {
+  color: #e3b873;
+  text-decoration: underline;
+}
+.section2__tittle {
+  width: 253px;
+  height: 66px;
+  margin: 0;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  margin-left: 134px;
+  color: #e3b873;
+}
+
+.infoBlock {
+  display: none;
+}
+
+.infoBlock.active {
+  display: grid;
+  grid-template-columns: 150px 180px;
+  grid-auto-rows: minmax(0, auto);
+  grid-column-gap: 30px;
+  grid-row-gap: 34px;
+}
+
+.section2__p {
+  width: 442px;
+  height: 86px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  margin-left: 134px;
+  margin-right: 50px;
+  padding-top: 34px;
+  color: #ffffff;
+}
+
+.section2__image {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 52px;
+  justify-content: space-around;
+  margin-right: 134px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 150px 180px;
+  grid-auto-rows: minmax(0, auto);
+  margin-left: 134px;
+  padding-top: 42px;
+  grid-column-gap: 30px;
+  grid-row-gap: 34px;
+  margin-bottom: 20px;
+}
+
+.tittle__info {
+  color: #e3b873;
+  text-transform: uppercase;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 9px;
+}
+
+.text__info {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.text__info2 {
+  display: none;
+}
+
+.text__info3 {
+  display: none;
+}
+
+.slider {
+  /* position: relative; */
+  margin: 20px 0;
+}
+
+.slider__images {
+  position: absolute;
+  width: 679px;
+  height: 482px;
+  margin-left: 626px;
+}
+
+.slider__images-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  padding: 7px 0;
+}
+
+.slider__images .image {
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  opacity: 0;
+  transition: opacity 800ms ease;
+}
+
+.slider__images .image.active {
+  opacity: 1;
+}
+
+.slider__arrows {
+  position: absolute;
+  width: 205px;
+  height: 20px;
+  color: #fff;
+  margin-top: 470px;
+  margin-left: 135px;
+}
+
+.slider__arrow {
+  position: absolute;
+  /* width: 41px; 
+    height: 13px;  */
+  font-size: 41px;
+  text-align: center;
+  cursor: pointer;
+  /* opacity: 0; */
+  /* background: rgba(0, 0, 0, 0.4); */
+  /* transition: opacity 0.4s ease; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.slider__arrow.left {
+  left: 0;
+}
+
+.slider__arrow.right {
+  right: 0;
+}
+
+.slider__dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 71px;
+  bottom: -15px;
+  width: 63px;
+  height: 9px;
+}
+
+.slider__dots-item {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+
+.slider__dots-item:hover,
+.slider__dots-item.active {
+  background: white;
+}
